@@ -12,18 +12,60 @@ import numpy as np
 from urllib.parse import urlparse
 
 # ============================================
-# HIDE STREAMLIT HEADER AND FOOTER
+# PAGE CONFIG
 # ============================================
 
 st.set_page_config(page_title="Fraud SMS Detector", page_icon="🛡️")
 
+# ============================================
+# HIDE STREAMLIT HEADER, FOOTER, AND ALL ICONS
+# ============================================
+
 st.markdown("""
 <style>
-    footer { display: none !important; }
-    header { display: none !important; }
-    #MainMenu { display: none !important; }
-    .stApp > footer { display: none !important; }
-    .stApp > header { display: none !important; }
+    /* Hide Streamlit header (top bar) */
+    header {
+        display: none !important;
+    }
+
+    /* Hide Streamlit footer (bottom bar) */
+    footer {
+        display: none !important;
+    }
+
+    /* Hide the "Manage app" button */
+    .stDeployButton {
+        display: none !important;
+    }
+
+    /* Hide the entire footer container */
+    .stApp > footer {
+        display: none !important;
+    }
+    .viewerBadge_container__1QSob {
+        display: none !important;
+    }
+    .st-emotion-cache-1r6slb0 {
+        display: none !important;
+    }
+    .css-1yc1f7r {
+        display: none !important;
+    }
+
+    /* Hide the main menu (three dots) */
+    #MainMenu {
+        display: none !important;
+    }
+
+    /* Hide any extra Streamlit branding */
+    .stAppDeployButton {
+        display: none !important;
+    }
+
+    /* Remove extra padding at bottom */
+    .main > div {
+        padding-bottom: 0rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -218,8 +260,8 @@ with tab3:
     st.caption("No data stored - Privacy by Design")
 
 # ============================================
-# FOOTER
+# FOOTER (YOUR NAME ONLY)
 # ============================================
 
 st.markdown("---")
-st.caption("© 2026 Maureen | 3MTT NextGen Project - Fraud SMS Classifier")
+st.caption("© 2026 Maureen | 3MTT NextGen Project")
