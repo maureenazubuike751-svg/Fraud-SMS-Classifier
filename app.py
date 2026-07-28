@@ -264,4 +264,4 @@ with tab3:
 # ============================================
 
 st.markdown("---")
-st.caption("© 2026 Maureen | 3MTT NextGen Project")
+st.caption("© 2026 Maureen | 3MTT NextGen AI/ML Project")
